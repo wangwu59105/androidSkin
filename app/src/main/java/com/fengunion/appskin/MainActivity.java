@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.fengunion.funionview.SkinButton;
+import com.fengunion.skin.SkinUtils;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        SkinButton skinButton = new SkinButton(this);
+        SkinUtils skinUtils = new SkinUtils();
     }
 
     @Override
